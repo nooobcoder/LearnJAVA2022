@@ -14,45 +14,50 @@ import com.nooobcoder.annotations.VeryImportant;
  */
 @VeryImportant
 public class Cat {
-    @ImportantString
-    private String name;
-    private int age;
-    private String color;
-    private String breed;
+  @ImportantString
+  private String name;
+  private int age;
+  private String color;
+  private String breed;
 
-    public Cat(String name, int age, String color, String breed) {
-        this.name = name;
-        this.age = age;
-        this.color = color;
-        this.breed = breed;
-    }
+  public Cat(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
 
-    public Cat(String name) {
-        this.name = name;
-    }
+  public Cat(String name, int age, String color, String breed) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+    this.breed = breed;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public Cat(String name) {
+    this.name = name;
+  }
 
-    public int getAge() {
-        return age;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getColor() {
-        return color;
-    }
+  public int getAge() {
+    return age;
+  }
 
-    public String getBreed() {
-        return breed;
-    }
+  public String getColor() {
+    return color;
+  }
 
-    @RunImmediately(times = 3)
-    public String meow() {
-        return name + " meows!";
-    }
+  public String getBreed() {
+    return breed;
+  }
 
-    public String eat() {
-        return name + " muches!";
-    }
+  @RunImmediately(times = 3)
+  public String meow() {
+    return name + " meows!";
+  }
+
+  public String eat() {
+    return name + " muches!";
+  }
 }
